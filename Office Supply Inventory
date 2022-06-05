@@ -1,0 +1,19 @@
+CREATE TABLE office_supplies (id INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Quantity INTEGER, Aisle INTEGER);
+
+INSERT INTO office_supplies VALUES (1, "Paper", 1, 50, 1);
+INSERT INTO office_supplies VALUES (2, "Paper clips", 2, 24, 2);
+INSERT INTO office_supplies VALUES (3, "Stapler", 15, 10, 3);
+INSERT INTO office_supplies VALUES (4, "Staples", 5, 20, 4);
+INSERT INTO office_supplies VALUES (5, "Staple remover", 7, 5, 5);
+INSERT INTO office_supplies VALUES (6, "Thumb tacks", 3, 10, 6);
+INSERT INTO office_supplies VALUES (7, "Pencils", 5, 50, 7);
+INSERT INTO office_supplies VALUES (8, "Binder Rings", 8, 13, 8);
+INSERT INTO office_supplies VALUES (9, "Clip Board", 5, 2, 9);
+INSERT INTO office_supplies VALUES (10, "Markers", 6, 30, 10);
+INSERT INTO office_supplies VALUES (11, "Pens", 5, 45, 11);
+INSERT INTO office_supplies VALUES (12, "Highlighters", 4, 10, 12);
+INSERT INTO office_supplies VALUES (13, "Pocket folders", 1, 100, 13);
+INSERT INTO office_supplies VALUES (14, "Hanging file", 15, 20, 14);
+INSERT INTO office_supplies VALUES (15, "File folders", 8, 12, 15);
+
+SELECT Aisle, (Price) FROM office_supplies GROUP BY Aisle;
